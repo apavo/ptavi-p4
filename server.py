@@ -28,7 +28,7 @@ time.gmtime(self.direcciones[direccion][1]))
             line += direccion + "\t" + self.direcciones[direccion][0] + "\t"
             line += hora + "\r\n"
         fich.write(line)
-
+        fich.close()
     def handle(self):
         """
         Recibe mensajes register y almacena en un diccionario la direccion,
